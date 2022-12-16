@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'login/login.dart';
+import 'login/login2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData.dark(),
-      home: const LoginPage(),
+      // light for some projects, dark for some projects
+      theme: ThemeData.light(),
+      home: const LoginPageTwo(),
     );
   }
 }
